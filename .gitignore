@@ -1,0 +1,6 @@
+.vscode
+.idea/
+.eslintcache
+coverage
+node_modules/
+.DS_Store
