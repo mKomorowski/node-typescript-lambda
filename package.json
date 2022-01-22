@@ -1,7 +1,12 @@
 {
   "name": "node-typescript-lambda",
   "version": "0.0.1",
-  "description": "",
+  "description": "Node typescript template to spin AWS Lambda functions",
+  "keywords": [
+    "typescript",
+    "aws",
+    "lambda"
+  ],
   "engines": {
     "node": ">= 16.13"
   },
