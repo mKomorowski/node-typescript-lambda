@@ -1,25 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "module": "es2015",
+    "target": "esnext",
+    "outDir": "./dist",
+    "strict": false,
+    "types": ["node"],
+    "resolveJsonModule": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "alwaysStrict": true,
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "lib": ["ES2020.Promise"]
   },
-  "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
