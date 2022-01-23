@@ -1,5 +1,15 @@
-import { Handler } from 'aws-lambda';
+import type { Handler } from 'aws-lambda';
 
-const handler: Handler = async (event, context) => {};
+export type Event = {
+  body: object;
+};
 
-exports.handler = handler;
+export const handler: Handler<Event> = async (event, context, callback) => {
+  const { functionName } = context;
+
+  callback(null, {
+    statusCode: 200,
+    functionName,
+    body: event.body,
+  });
+};
